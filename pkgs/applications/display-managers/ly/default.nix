@@ -17,8 +17,20 @@ stdenv.mkDerivation rec {
   buildInputs = [ libxcb linux-pam ];
 
   installPhase = ''
-    mkdir -p $out/bin
-    cp bin/ly $out/bin
+    runHook preInstall
+
+    mkdir -p $out/etc/ly
+
+    # We won't be installing pam neither the systemd service.
+    # We'd rather rely on creating a module and use
+    # security.pam.services and systemd.services.ly.
+    cp res/config.ini $out/etc/ly/
+    cp res/xsetup.sh $out/etc/ly/
+    cp res/wsetup.sh $out/etc/ly/
+    cp -r res/lang $out/etc/ly/
+    install -Dm555 -t $out/bin bin/ly
+
+    runHook postInstall
   '';
 
   meta = with lib; {

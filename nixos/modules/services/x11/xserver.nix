@@ -631,6 +631,7 @@ in
           noDmUsed = !(dmConf.gdm.enable
                     || dmConf.sddm.enable
                     || dmConf.xpra.enable
+                    || dmConf.ly.enable
                     || dmConf.lightdm.enable);
       in mkIf (noDmUsed) (mkDefault false);
 

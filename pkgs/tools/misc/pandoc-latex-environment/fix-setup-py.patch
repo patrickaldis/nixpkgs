@@ -1,0 +1,5 @@
+--- a/setup.py
++++ b/setup.py
+@@ -115,115 +115,115 @@
+-    setup_requires=["pytest-runner"],
++    setup_requires=[],

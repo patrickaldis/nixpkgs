@@ -1,19 +1,21 @@
+
 { buildPythonApplication,
 fetchFromGitHub,
 setuptools,
 pandocfilters,
-lib
+lib,
+panflute
  }:
 buildPythonApplication {
-    pname = "pandoc-latex-environment";
+    pname = "pandoc-latex-admonition";
     version = "1.1.6.2";
     format = "pyproject";
 
     src = fetchFromGitHub {
       owner = "chdemko";
-      repo = "pandoc-latex-environment";
-      rev = "2c5ce1bfb91c316d4259bee6d4dd76814167fa11";
-      sha256 = "vxDAeXdxxswhNgYrgo88YuXDtSvxJy91h2FA8HkbNd4=";
+      repo = "pandoc-latex-admonition";
+      rev = "2654ce4cfbfd1e21b77b5320ed2042e2f23d89ed";
+      sha256 = "csjquE9REfsAzPnKkIg7c1xd6NvmELNEgyfREgeCxls=";
     };
 
     nativeBuildInputs = [
@@ -22,6 +24,7 @@ buildPythonApplication {
 
     propagatedBuildInputs = [
       pandocfilters
+      panflute
     ];
 
     postPatch = ''
@@ -30,8 +33,8 @@ buildPythonApplication {
     '';
 
     meta = with lib; {
-      homepage = "https://github.com/chdemko/pandoc-latex-environment";
-      description = "Pandoc filter for adding LaTeX environement on specific div";
+      homepage = "https://github.com/chdemko/pandoc-latex-admonition";
+      description = "A pandoc filter for setting admonition on specific div or codeblock elements";
       license = licenses.bsd3;
       maintainers = with maintainers; [ patrickaldis ];
     };

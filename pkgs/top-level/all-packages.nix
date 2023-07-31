@@ -10957,6 +10957,8 @@ with pkgs;
   pa_applet = callPackage ../tools/audio/pa-applet { };
 
   pandoc-latex-environment = python3Packages.callPackage ../tools/misc/pandoc-latex-environment {};
+
+  pandoc-latex-admonition = python3Packages.callPackage ../tools/misc/pandoc-latex-admonition {};
   
   pandoc-acro = python3Packages.callPackage ../tools/misc/pandoc-acro { };
 

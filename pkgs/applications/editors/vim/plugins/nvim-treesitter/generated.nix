@@ -502,8 +502,8 @@
       src = fetchFromGitHub {
         owner = "patrickaldis";
         repo = "tree-sitter-daml";
-        rev = "b49874f2b88b571299be3f7911e5bcccdf76787b";
-        hash = "sha256-ncv0eOWw1psQH4TXdMkVEbjiLhv5mYKiF7V3q8qGDlk=";
+        rev = "c618813eadc30e7d6aea862cac5aa30bf621e7be";
+        hash = "sha256-BTROUMFG+/IzayC+kp7Zm3MNNNkQlvzLrg8LcbC9W5U=";
       };
       meta.homepage = "https://github.com/patrickaldis/tree-sitter-daml";
     };

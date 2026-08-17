@@ -13893,7 +13893,7 @@ final: prev: {
       owner = "patrickaldis";
       repo = "nvim-treesitter";
       rev = "add-daml";
-      hash = "sha256-cbh4YOXIFIZF5munqjxz1JIXpZfNnXN786dWVZq9EKc=";
+      hash = "sha256-8ByKoFrEeZClVaB/elo+X2YuXKFZFc58QQvGnifXBGY=";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
     meta.license = getLicenseFromSpdxId "Apache-2.0";

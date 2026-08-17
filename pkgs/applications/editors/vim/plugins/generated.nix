@@ -13890,10 +13890,10 @@ final: prev: {
     pname = "nvim-treesitter";
     version = "0.10.0-unstable-2026-08-01";
     src = fetchFromGitHub {
-      owner = "nvim-treesitter";
+      owner = "patrickaldis";
       repo = "nvim-treesitter";
-      rev = "7b6cc8949f9999c5ed91436cbe24aa5f99c42025";
-      hash = "sha256-a1ZbCf43gzBGgJa7iKCjbb+XtNYWPfjHlTJse3cq9L0=";
+      rev = "add-daml";
+      hash = "sha256-cbh4YOXIFIZF5munqjxz1JIXpZfNnXN786dWVZq9EKc=";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
     meta.license = getLicenseFromSpdxId "Apache-2.0";

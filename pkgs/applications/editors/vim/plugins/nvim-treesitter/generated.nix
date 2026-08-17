@@ -496,6 +496,17 @@
       };
       meta.homepage = "https://github.com/gdamore/tree-sitter-d";
     };
+    daml = buildGrammar {
+      language = "daml";
+      version = "0.0.0+rev=b49874f";
+      src = fetchFromGitHub {
+        owner = "patrickaldis";
+        repo = "tree-sitter-daml";
+        rev = "b49874f2b88b571299be3f7911e5bcccdf76787b";
+        hash = "sha256-ncv0eOWw1psQH4TXdMkVEbjiLhv5mYKiF7V3q8qGDlk=";
+      };
+      meta.homepage = "https://github.com/patrickaldis/tree-sitter-daml";
+    };
     dart = buildGrammar {
       language = "dart";
       version = "0.0.0+rev=be07cf7";
@@ -3797,6 +3808,9 @@
     };
     d = buildQueries {
       language = "d";
+    };
+    daml = buildQueries {
+      language = "daml";
     };
     dart = buildQueries {
       language = "dart";
